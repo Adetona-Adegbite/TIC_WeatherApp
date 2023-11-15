@@ -4,7 +4,7 @@ async function fetchWeatherData() {
   const weatherData = [];
   try {
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/forecast.json?key=9454b288894a40e4a14203247232609&q=Lagos&days=5`
+      `https://api.weatherapi.com/v1/forecast.json?key=9454b288894a40e4a14203247232609&q=Lagos&days=5`
     );
     // console.log(response);
     response.data.forecast.forecastday.forEach((element) => {
