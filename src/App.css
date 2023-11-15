@@ -1,0 +1,42 @@
+button {
+  width: 140px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.weather_data {
+  display: flex;
+  width: 80vw;
+  background: #fffffa;
+  justify-content: space-around;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.weather_data img {
+  width: 10%;
+  height: 10%;
+  align-self: center;
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .weather_data {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+  .weather_data img {
+    width: 30%;
+    height: 30%;
+  }
+}
